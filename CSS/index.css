@@ -32,11 +32,11 @@
   z-index: 2;
 }
 .header:hover {
-  background-color: #A27E1A;
-  -webkit-transition: background-color 4s ease-out;
-  -moz-transition: background-color 4s ease-out;
-  -o-transition: background-color 4s ease-out;
-  transition: background-color 4s ease-out;
+  background-color: maroon;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
 .header h1 {
   margin: 0;
@@ -85,8 +85,8 @@
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
   display: inline-block;
-  animation: skew 3s infinite;
-  transform: skew(20deg);
+  animation: skew 5s infinite;
+  transform: skew(10deg);
   animation-direction: alternate;
 }
 .article h2 {
@@ -115,10 +115,10 @@
 }
 @keyframes skew {
   0% {
-    transform: skewX(20deg);
+    transform: skewX(10deg);
   }
   100% {
-    transform: skewX(-20deg);
+    transform: skewX(-10deg);
   }
 }
 .article-open {
