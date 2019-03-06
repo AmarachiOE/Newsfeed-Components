@@ -1,6 +1,7 @@
 .articles {
   margin-top: 95px;
 }
+
 .article {
   margin: 20px 10%;
   padding: 0 20px 25px;
@@ -11,6 +12,10 @@
   height: 50px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
+  display: inline-block;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
 
   h2 {
     font-size: 28px;
@@ -38,6 +43,15 @@
     cursor: pointer;
     transform: translate(-50%);
     background-color: white;
+  }
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
   }
 }
 
